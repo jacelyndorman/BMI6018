@@ -6,13 +6,13 @@
 
 #Example
 
-zero_a = ['jacelyn','second','third','fourth','fifth']
-zero_b = zero_a[0].upper()
-zero_c = hex(ord(zero_a[0][0]))
+#zero_a = ['jacelyn','second','third','fourth','fifth']
+#zero_b = zero_a[0].upper()
+#zero_c = hex(ord(zero_a[0][0]))
 
-print (zero_b)
-print (zero_c)
-print (ord(zero_a[0][0]))
+#print (zero_b)
+#print (zero_c)
+#print (ord(zero_a[0][0]))
 
 
 # In[2]:

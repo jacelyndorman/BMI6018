@@ -4,7 +4,7 @@
 
 
 def recursive_inner(input_list):    #I think this works for what we need. It doesn't work on more complex lists, like ([1,2,3,4,[5,6,7,11],12,[13,14,[15,16]]])
-    empty = []
+    empty = []                      #Feel free to let me know if you find another solution, though!
     for item in input_list:
         if isinstance(item, list):
             return(recursive_inner(item))

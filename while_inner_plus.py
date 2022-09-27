@@ -8,15 +8,16 @@
 #That is [8, 9] (the inner most list) plus 1 -> [9, 10]
 
 
-def while_inner(input):   #This is definitely not finished. It does not work yet.
-    empty = []
-    totalitems = 0
-    for item in input:
-        totalitems += 1
-        if isinstance(item, list):           
-            empty.append(item)
-    return(empty)
+   
+def while_inner(input_list):        #I feel like I'm close with this one.
+    while isinstance(input_list, list):
+        for i in input_list:
+            if isinstance(i, list):
+                input_list = i
+            else:
+                i += 1
+            return(i)
+            
             
     
 while_inner([1,2,3,4,[5,6,7,[8,9]]])
-    

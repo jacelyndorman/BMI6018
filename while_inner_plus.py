@@ -21,3 +21,21 @@ def while_inner(input_list):        #I feel like I'm close with this one.
             
     
 while_inner([1,2,3,4,[5,6,7,[8,9]]])
+
+#Amy's idea: This is really janky but kind of works?
+input_list = [1,2,3,4,[5,6,7,[8,9]]]
+
+i = 0
+sublist = []
+while i < len(input_list):
+    for x in (input_list):
+        if type(x) == list:
+            for y in x:
+                if type(y) == list:
+                    sublist = y
+                    k=1
+                    output_list = [j + k for j in sublist]          
+        else:
+            continue
+    i +=1
+print(output_list)

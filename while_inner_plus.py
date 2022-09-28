@@ -8,7 +8,7 @@
 #That is [8, 9] (the inner most list) plus 1 -> [9, 10]
 
 
-#Amy's idea: This is really janky but kind of works?
+#Amy's idea: Works better than my last one, but I tried yours and it's working too!
 input_list = [1,2,3,4,[5,6,7,[8,9]]]
 
 i = 0
@@ -16,14 +16,11 @@ sublist = []
 while i < len(input_list):
     for x in (input_list):
         if type(x) == list:
-            for y in x:
-                if type(y) == list:
-                    sublist = y
-                    k=1
-                    output_list = [j + k for j in sublist]          
-        else:
-            continue
+            input_list = x
+            continue  
     i +=1
+k=1
+output_list = [j + k for j in input_list] 
 print(output_list)
 
 

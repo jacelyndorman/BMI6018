@@ -39,3 +39,23 @@ while i < len(input_list):
             continue
     i +=1
 print(output_list)
+
+
+def while_inner(input_list):     #I think this actually works. - Jacelyn
+    islist = True
+    while islist:
+        empty = []
+        for i in input_list:
+            if isinstance(i, list):
+                islist = True
+                input_list = i
+                break
+            else:
+                islist = False
+                i += 1
+                empty.append(i)
+    return(empty)
+            
+            
+    
+while_inner([1,2,3,4,[5,6,7,[8,9,[10,11],12]]])

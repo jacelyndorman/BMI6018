@@ -3,8 +3,8 @@
 #This is to be done with recursion. Note: the input will contain only integers or lists.
 
 
-def recursive_inner(input_list):    #I think this works for what we need. It doesn't work on more complex lists, like ([1,2,3,4,[5,6,7,11],12,[13,14,[15,16]]])
-    empty = []                      #Feel free to let me know if you find another solution, though!
+def recursive_inner(input_list):
+    empty = []                      
     for item in input_list:
         if isinstance(item, list):
             return(recursive_inner(item))

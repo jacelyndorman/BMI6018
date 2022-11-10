@@ -87,5 +87,17 @@ print(q_9)
 
 #Question 10 What was the mean for humidity in February? Float
 
+months = weather_data_np[:, [3]]
+humidity = weather_data_np[:, [8]]
+mask = months == 2
+just_humidity_february = humidity[mask]
+q_10 = np.nanmean(just_humidity_february)
+print(q_10)
+
+
 #Question 11 What was the std for humidity in February? Float
-q_11
+
+q_11 = np.std(just_humidity_february) #created array in last question
+
+print(q_11)
+
